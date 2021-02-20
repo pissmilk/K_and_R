@@ -1,3 +1,26 @@
+/* MIT License
+ *
+ * Copyright (c) 2021 Brighton Sikarskie
+ *  
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 #include <stdio.h>
 #include <sys/ioctl.h>
 
@@ -5,7 +28,8 @@ const unsigned int max = 10;
 
 int uintLen(unsigned int);
 
-int main(void) {
+int main(void) 
+{
     unsigned int wordLengths[max + 1] = {0}; // + 1 because I am going to keep track of words over the max
     unsigned int width = 4, highestFreq = 0;
 
@@ -39,7 +63,6 @@ int main(void) {
         }
     }
 
-    printf("%d\t%d\n", w.ws_col, highestFreq);
     // horizontal histogram version 1
     for (unsigned int i = 0; i <= max; ++i) {
         if (i != max) {
