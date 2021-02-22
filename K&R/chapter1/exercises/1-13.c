@@ -28,8 +28,7 @@ const unsigned int max = 10;
 
 int uintLen(unsigned int);
 
-int main(void) 
-{
+int main(void) {
     unsigned int wordLengths[max + 1] = {0}; // + 1 because I am going to keep track of words over the max
     unsigned int width = 4, highestFreq = 0;
 

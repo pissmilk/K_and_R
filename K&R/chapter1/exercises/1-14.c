@@ -24,8 +24,7 @@
 #include <stdio.h>
 #include <sys/ioctl.h>
 
-int main(void)
-{
+int main(void) {
     int freq['z' - 'a' + 1] = {0};
     struct winsize w;
     ioctl(0, TIOCGWINSZ, &w);

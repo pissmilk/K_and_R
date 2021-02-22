@@ -23,8 +23,7 @@
 
 #include <stdio.h>
 
-int main(void) 
-{
+int main(void) {
     float fahr = 0;
 
     puts("Celsius -> Fahrenheit");

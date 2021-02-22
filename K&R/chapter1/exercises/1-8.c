@@ -23,8 +23,7 @@
 
 #include <stdio.h>
 
-int main(void) 
-{
+int main(void) {
     int blanks = 0, tabs = 0, newLines = 0;
 
     for (int c = getchar(); c != EOF; c = getchar()) {
