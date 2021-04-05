@@ -17,7 +17,7 @@ main()
         if (c == ' ' || c == '\n' || c = '\t')      // This will result in an error, but the book says to do it
             state = OUT;                             // on the next exercise it says to find any bugs so I guess
         else if (state == OUT) {                     // that is why. I will leave it be for now.
-            state = IN;                              
+            state = IN;
             ++nw;
         }
     }
